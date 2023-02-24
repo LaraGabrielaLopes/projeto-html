@@ -29,11 +29,15 @@
 }
 
 #lista {
-    border: 1px solid #e0e0e0;
     float: right;
     width: 600px;
     margin-top: 25px;
     text-align: left;
+}
+
+#tabela {
+    width: 600px;   
+    line-height: 30px;
 }
 
 .menu a {
@@ -51,6 +55,12 @@
     color: #fff;
     background-color: #333333;
 }
+
+
+
+
+
+
 
 
 
