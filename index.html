@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">        
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width,inicial-scala=1.0"/>       
         <title>Projeto HTML</title>
         <link rel="stylesheet" type="text/css" href="estilo.css"
     </head>
@@ -9,15 +10,18 @@
     <body id="geral">
 
         <div id="cabecalho">
-            Controle Financeiro
+            <span class="cabecalho">Controle Financeiro</span>
 
             <div class="menu">
-                <a href="limpar.html">Limpar dados</a>
+                <a href="limpar.html">Limpar dados</a> |
                 <a href="cadastro.html">Cadastro de Informações</a>
             </div>
         </div>
 
-        <form">        
+        <form id="form"> 
+            <br>
+            <h4 style="text-align: center;">Nova Transação</h4>
+            <br>
             Tipo de Transação: <br>
             <select name "Transação">
             <option value="" class="caixa"></option>    
@@ -34,9 +38,33 @@
             <input type="submit" value="Adicionar Transação" class="caixa">
         </form>
 
-        <br><br>
-
-        <hr>
-
+        <div id="lista">
+            <h4 style="text-align: center;">Extrato de Transações</h4>
+            <table border="2" width="600px">
+               <tr>
+                    <th>Mercadoria</th>
+                    <th>Valor</th>
+               </tr>
+            
+               <tr>
+                    <td> + Lorem ipsum dolor sit amet consectetur</td>
+                    <td>R$ 12.999,99</td>
+               </tr>
+               
+               <tr>
+                    <td> - Quis nostrud exercitation</td>
+                    <td>R$ 99,99</td>
+                </tr>
+                
+                <tr>
+                    <td>Lorem ipsum</td>
+                    <td>R$ 9,99</td>
+               </tr>
+               <tr>
+                <td><b>Total</b></td>
+                <td>R$ 12.909,99</td>
+           </tr>
+            </table>
+        </div>
     </body>
 </html>
