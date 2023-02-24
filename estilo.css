@@ -1,0 +1,38 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif
+}
+
+#geral {
+    width: 520px;
+}
+
+#cabecalho {
+    
+    background-color: gray;
+    text-align: left;
+    padding: 15px;
+}
+
+.caixa {
+    width: 520px;
+}
+
+.menu {
+    float: right;
+    display: flex;
+   
+}
+
+.menu a {
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    border: 1px solid white;
+    background-color: white;
+}
+
