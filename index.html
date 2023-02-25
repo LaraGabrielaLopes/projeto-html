@@ -10,32 +10,34 @@
     <body id="geral">
 
         <div id="cabecalho">
-            <span class="cabecalho">Controle Financeiro</span>
-
-            <div class="menu">
-                <a href="limpar.html">Limpar dados</a> 
+            <div>
+                <span>Controle financeiro</span>
+            </div>
+            <div id="menu">
+                <a href="limpar.html">Limpar dados</a>  |
                 <a href="cadastro.html">Cadastro de Informações</a>
             </div>
-        </div>
+        </div> 
 
         <form id="form"> 
             <br>
             <h4 style="text-align: center;">Nova Transação</h4>
             <br>
             Tipo de Transação: <br>
-            <select name "Transação">
-            <option value="" class="caixa"></option>    
+            <select name "Transação" class="caixa">
+            <option value=""></option>    
             <option value="compra">Compra</option>
             <option value="venda">Venda</option>
             </select><br><br>
 
             Nome Da Mercadoria: <br>
-            <input type="text" value="input"><br><br>
+            <input type="text" value="input" class="caixa"><br><br>
 
             Valor: <br>
-            <input type="text" value="R$ 0,00"><br><br>
+            <input type="text" value="R$ 0,00" class="caixa"><br><br>
 
-            <input type="submit" value="Adicionar Transação" class="caixa">
+            <input type="submit" value="Adicionar Transação" class="bottom">
+            <br><br>
         </form>
 
         <div id="lista">

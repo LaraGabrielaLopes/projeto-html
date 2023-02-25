@@ -1,10 +1,10 @@
 * {
-    font-family: Lato;
+    font-family: Lato Regular;
     margin:auto
 }
 
 @font-face {
-    font-family: Lato;
+    font-family: Lato Regular;
     src: url(fontes/Lato-Regular.ttf);
     font-weight: normal;
     font-style: normal;
@@ -17,11 +17,23 @@
 
 #cabecalho {
     background-color: #e0e0e0;
-    padding: 20px;
+    padding: 30px;
+    display: flex
+}
+
+#menu {
+   background-color: #fff;
+   padding: 8px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
 }
 
 #form {
-    margin-top: 25px;
+    margin: 25px;
     border: 1px solid #e0e0e0;
     padding: 0 10px;
     width: 400px;
@@ -40,17 +52,14 @@
     line-height: 30px;
 }
 
-.menu a {
-    float: right;
-    background-color: #fff;
-    padding: 5px;
-    text-decoration: none;
-    color: black;
-}
-
 .caixa {
     width: 390px;
-    padding: 10px;
+    height: 20px;
+}
+
+.bottom {
+    width: 399px;
+    padding: 8px;
     text-align: center;
     color: #fff;
     background-color: #333333;
