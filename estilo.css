@@ -17,7 +17,7 @@
 
 #cabecalho {
     background-color: #e0e0e0;
-    padding: 30px;
+    padding: 10px;
     display: flex
 }
 
@@ -47,14 +47,35 @@
     text-align: left;
 }
 
+.lista {
+    margin: 15px;
+}
+
 #tabela {
     width: 600px;   
     line-height: 30px;
 }
 
+#table {
+    border-color: #e0e0e0;
+  }
+
+  td, th {
+    border-bottom: 1px solid #e0e0e0; 
+    border-left: none; 
+    border-right: none; 
+    border-top: none; 
+  }
+
+  tr:nth-last-child(1) {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+
 .caixa {
     width: 390px;
     height: 20px;
+    border-radius: #dddddd;
 }
 
 .bottom {
@@ -63,6 +84,10 @@
     text-align: center;
     color: #fff;
     background-color: #333333;
+}
+
+.lucro {
+    display: block;
 }
 
 

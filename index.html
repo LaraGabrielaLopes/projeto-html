@@ -8,17 +8,21 @@
     </head>
 
     <body id="geral">
-
+        <!--Área do cabeçalho + Menu-->
         <div id="cabecalho">
             <div>
-                <span>Controle financeiro</span>
+                <span>
+                    <img src="imagens/logo.png" alt="logo" style="vertical-align: middle;">
+                    Controle financeiro
+                </span>
             </div>
             <div id="menu">
                 <a href="limpar.html">Limpar dados</a>  |
                 <a href="cadastro.html">Cadastro de Informações</a>
             </div>
         </div> 
-
+        
+        <!--Área do formulário "Nova Transação"-->
         <form id="form"> 
             <br>
             <h4 style="text-align: center;">Nova Transação</h4>
@@ -31,22 +35,24 @@
             </select><br><br>
 
             Nome Da Mercadoria: <br>
-            <input type="text" value="input" class="caixa"><br><br>
+            <input type="text" placeholder="input" class="caixa"><br><br>
 
             Valor: <br>
-            <input type="text" value="R$ 0,00" class="caixa"><br><br>
+            <input type="text" placeholder="R$ 0,00" class="caixa"><br><br>
 
             <input type="submit" value="Adicionar Transação" class="bottom">
             <br><br>
         </form>
 
+        <!--Área da lista de transações "Extrato de Transações"-->
         <div id="lista">
+            <div class="lista">
             <h4 style="text-align: center;">Extrato de Transações</h4>
-            <table id="tabela">
-               <tr>
+            <table id="tabela" border="0">
+                <tr>
                     <th>Mercadoria</th>
                     <th>Valor</th>
-               </tr>
+                </tr>
                       
                <tr>
                     <td> + Lorem ipsum dolor sit amet consectetur</td>
@@ -59,17 +65,18 @@
                 </tr>
                 
                 <tr>
-                    <td> + Lorem ipsum</td>
-                    <td>R$ 9,99</td>
+                    <td style="border-bottom: double #e0e0e0;"> + Lorem ipsum</td>
+                    <td style="border-bottom: double #e0e0e0;">R$ 9,99</td>
                </tr>
 
                <tr>
-                <td><b>Total</b></td>
-                <td><b>R$ 12.909,99</td></b>
+                <td style=" border-bottom: none;"><b>Total</b></td>
+                <td style=" border-bottom: none;"><b>R$ 12.909,99 <span class="lucro">[LUCRO]</span></td></b>
                 </tr>
-                
+            </div>    
             </table>
         </div>
+        
     
     </body>
 </html>
