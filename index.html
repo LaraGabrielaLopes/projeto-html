@@ -1,82 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head></head>
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width,inicial-scala=1.0"/>       
         <title>Projeto HTML</title>
-        <link rel="stylesheet" type="text/css" href="estilo.css"
+        <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
 
     <body id="geral">
-        <!--Área do cabeçalho + Menu-->
-        <div id="cabecalho">
+
+        <!--ÁREA DO CABEÇALHO-->
+        <header id="cabecalho">
             <div>
-                <span>
-                    <img src="imagens/logo.png" alt="logo" style="vertical-align: middle;">
-                    Controle financeiro
-                </span>
+                <img src="imagens/logo.png" alt="logo" style="vertical-align: middle;">
+                Controle financeiro
             </div>
-            <div id="menu">
-                <a href="limpar.html">Limpar dados</a>  |
-                <a href="cadastro.html">Cadastro de Informações</a>
-            </div>
-        </div> 
-        
-        <!--Área do formulário "Nova Transação"-->
-        <form id="form"> 
-            <br>
-            <h4 style="text-align: center;">Nova Transação</h4>
-            <br>
-            Tipo de Transação: <br>
-            <select name "Transação" class="caixa">
-            <option value=""></option>    
-            <option value="compra">Compra</option>
-            <option value="venda">Venda</option>
-            </select><br><br>
 
-            Nome Da Mercadoria: <br>
-            <input type="text" placeholder="input" class="caixa"><br><br>
+            <nav id="menu">
+                <a class="menu-close" href="javascript:void(0)">X</a>
+                <a href="javascript:void(0)">Limpar dados</a>  |
+                <a href="javascript:void(0)">Cadastro de Informações</a>
+            </nav>
+        </header>
 
-            Valor: <br>
-            <input type="text" placeholder="R$ 0,00" class="caixa"><br><br>
+        <main><!--ÁREA DO CONTEÚDO-->
 
-            <input type="submit" value="Adicionar Transação" class="bottom">
-            <br><br>
-        </form>
-
-        <!--Área da lista de transações "Extrato de Transações"-->
-        <div id="lista">
-            <div class="lista">
-            <h4 style="text-align: center;">Extrato de Transações</h4>
-            <table id="tabela" border="0">
-                <tr>
-                    <th>Mercadoria</th>
-                    <th>Valor</th>
-                </tr>
-                      
-               <tr>
-                    <td> + Lorem ipsum dolor sit amet consectetur</td>
-                    <td>R$ 12.999,99</td>
-               </tr>
-               
-               <tr>
-                    <td> - Quis nostrud exercitation</td>
-                    <td>R$ 99,99</td>
-                </tr>
-                
-                <tr>
-                    <td style="border-bottom: double #e0e0e0;"> + Lorem ipsum</td>
-                    <td style="border-bottom: double #e0e0e0;">R$ 9,99</td>
-               </tr>
-
-               <tr>
-                <td style=" border-bottom: none;"><b>Total</b></td>
-                <td style=" border-bottom: none;"><b>R$ 12.909,99 <span class="lucro">[LUCRO]</span></td></b>
-                </tr>
-            </div>    
-            </table>
-        </div>
-        
+            <!--ÁREA DO FORMULÁRIO-->
+            <form id="form"> 
+                <br>
+                <h4 style="text-align: center;">Nova Transação</h4>
+                <br>
+                Tipo de Transação: <br>
+                <select name="Transação" class="caixa">
+                <option value=""></option>    
+                <option value="compra">Compra</option>
+                <option value="venda">Venda</option>
+                </select><br><br>
     
+                Nome Da Mercadoria: <br>
+                <input type="text" placeholder="input" class="caixa"><br><br>
+    
+                Valor: <br>
+                <input type="text" placeholder="R$ 0,00" class="caixa"><br><br>
+    
+                <input type="submit" value="Adicionar Transação" class="bottom">
+                <br><br>
+            </form>
+
+            <!--ÁREA DA LISTA DE TRANSAÇÕES-->
+            <div id="lista">
+                <div class="lista">
+                <h4 style="text-align: center;">Extrato de Transações</h4>
+                <table id="tabela" border="0">
+                    <tr>
+                        <th>Mercadoria</th>
+                        <th>Valor</th>
+                    </tr>
+                          
+                   <tr>
+                        <td> + Lorem ipsum dolor sit amet consectetur</td>
+                        <td>R$ 12.999,99</td>
+                   </tr>
+                   
+                   <tr>
+                        <td> - Quis nostrud exercitation</td>
+                        <td>R$ 99,99</td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="border-bottom: double #e0e0e0;"> + Lorem ipsum</td>
+                        <td style="border-bottom: double #e0e0e0;">R$ 9,99</td>
+                   </tr>
+    
+                   <tr>
+                    <td style=" border-bottom: none;"><b>Total</b></td>
+                    <td style=" border-bottom: none;"><b>R$ 12.909,99 <span class="lucro">[LUCRO]</span></td></b>
+                    </tr>
+                </div>    
+                </table>
+            </div>
+
+        </main>
     </body>
 </html>

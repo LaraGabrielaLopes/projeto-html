@@ -33,11 +33,13 @@
 }
 
 #form {
+    float: left;
+    display: block;
     margin: 25px;
     border: 1px solid #e0e0e0;
     padding: 0 10px;
     width: 400px;
-    float: left;
+
 }
 
 #lista {
@@ -45,10 +47,6 @@
     width: 600px;
     margin-top: 25px;
     text-align: left;
-}
-
-.lista {
-    margin: 15px;
 }
 
 #tabela {
@@ -60,17 +58,20 @@
     border-color: #e0e0e0;
   }
 
-  td, th {
+.menu-close {
+    display: none;
+}
+
+.lista {
+    margin: 15px;
+}
+  
+td, th {
     border-bottom: 1px solid #e0e0e0; 
     border-left: none; 
     border-right: none; 
     border-top: none; 
   }
-
-  tr:nth-last-child(1) {
-    border-bottom: 1px solid #e0e0e0;
-  }
-  
 
 .caixa {
     width: 390px;
@@ -89,6 +90,33 @@
 .lucro {
     display: block;
 }
+
+@media screen and (max-width:1100px) {
+    #lista {
+        clear: both;
+        width: 600px;
+        margin-top: 25px;
+        text-align: left;
+        color: red;
+            }
+}
+
+@media screen and (max-width:1100px) {
+    #form {
+        display: block;
+        margin: 25px;
+        border: 1px solid #e0e0e0;
+        padding: 0 10px;
+        width: 800px; }
+    
+    .caixa {
+       border-radius: #dddddd;
+       display: inline-flexbox;
+       width: 100px;
+       
+    }
+}
+
 
 
 
